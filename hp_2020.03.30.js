@@ -88,7 +88,7 @@ top.sync_comment = function sync_comment() {
 }
 
 setTimeout(function () {
-    $('#input_comment').val('Y(^_^)Y - https://blog.memo.cool/?p=321');
+    $('#input_comment').val('好');
     sync_comment();
 }, 1000);
 
@@ -244,7 +244,7 @@ hp.单次互评 = function 单次互评() {
     });
 
     /* 计算目标分数 */
-    let dest_points = hp.score_percentage * hp.getCurrentPoints() / 100;
+    let dest_points =hp.getCurrentPoints();
 
     /* 扣分 */
 
