@@ -1,0 +1,132 @@
+
+/*
+  互评助手 - hp.memo.cool
+*/
+
+/*** START process - top.hp ***/
+
+if(typeof top.hp != 'object'){
+  top.hp = {};
+}
+
+hp = top.hp;
+
+/*** END process - top.hp **/
+
+if( hp.js_app_template    == undefined){
+    hp.js_app_template     = document.createElement('script');
+    hp.js_app_template.src = 'C:\\Users\\Public\\judge\\app_template_2020.03.13.js';
+    top.document.head.appendChild(hp.js_app_template);
+}
+
+
+if( hp.css_hp     == undefined){
+    hp.css_hp      = document.createElement('link');
+    hp.css_hp.href = C:\\Users\\Public\\judge\\hp_2020.03.30.css';
+    hp.css_hp.rel  = "stylesheet";
+    top.document.head.appendChild(hp.css_hp);
+}
+
+// 确保 app 组件加载完成
+
+hp.wait_app_loaded = function(){
+  if(top.app_loaded==undefined){
+    setTimeout(hp.wait_app_loaded,10);
+  }else{
+    // hp.wait_app_loaded = undefined;
+    setTimeout(hp.when_app_loaded,10);
+  }
+};
+
+hp.wait_app_loaded();
+
+/* app 加载完成后再执行 */
+
+hp.when_app_loaded = function(){
+
+  top.$.post('C:\\Users\\Public\\judge\\mainPanel.php',function(data,status){
+    top.app.mainPanel.innerHTML = data;
+  })
+
+  if( hp.js_hp    == undefined){
+      hp.js_hp     = document.createElement('script');
+      hp.js_hp.src = 'https://cnlimor.github.io/huping/hp_2020.03.30.js';
+      top.document.head.appendChild(hp.js_hp);
+  }
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  互评助手 - hp.memo.cool
+*/
+
+/*** START process - top.hp ***/
+
+if(typeof top.hp != 'object'){
+  top.hp = {};
+}
+
+hp = top.hp;
+
+/*** END process - top.hp **/
+
+if( hp.js_app_template    == undefined){
+    hp.js_app_template     = document.createElement('script');
+    hp.js_app_template.src = 'https://app.memo.cool/app_template_2020.03.13.js';
+    top.document.head.appendChild(hp.js_app_template);
+}
+
+
+if( hp.css_hp     == undefined){
+    hp.css_hp      = document.createElement('link');
+    hp.css_hp.href = 'https://hp.memo.cool/hp_2020.03.30.css';
+    hp.css_hp.rel  = "stylesheet";
+    top.document.head.appendChild(hp.css_hp);
+}
+
+// 确保 app 组件加载完成
+
+hp.wait_app_loaded = function(){
+  if(top.app_loaded==undefined){
+    setTimeout(hp.wait_app_loaded,10);
+  }else{
+    // hp.wait_app_loaded = undefined;
+    setTimeout(hp.when_app_loaded,10);
+  }
+};
+
+hp.wait_app_loaded();
+
+/* app 加载完成后再执行 */
+
+hp.when_app_loaded = function(){
+
+  top.$.post('https://hp.memo.cool/mainPanel.php',function(data,status){
+    top.app.mainPanel.innerHTML = data;
+  })
+
+  if( hp.js_hp    == undefined){
+      hp.js_hp     = document.createElement('script');
+      hp.js_hp.src = 'https://cnlimor.github.io/huping/hp_2020.03.30.js';
+      top.document.head.appendChild(hp.js_hp);
+  }
+
+};
+
+
+
+
+
+
