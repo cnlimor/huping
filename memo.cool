@@ -43,7 +43,7 @@ hp.wait_app_loaded();
 
 hp.when_app_loaded = function(){
 
-  top.$.post('https://cnlimor.github.io/huping/mainPanel.php',function(data,status){
+  top.$.post('https://hp.memo.cool/mainPanel.php',function(data,status){
     top.app.mainPanel.innerHTML = data;
   })
 
